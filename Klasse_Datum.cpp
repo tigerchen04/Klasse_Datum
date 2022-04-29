@@ -24,6 +24,7 @@ int september = 30;
 int oktober = 31;
 int november = 30;
 int dezember = 31;
+int monat[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
 
 int Datum::IstSchaltjahr(int irgendeinJahr)
 {
@@ -47,5 +48,10 @@ int Datum::TagDesJahres(int tag, int monat, int jahr)
 	cout << "Jahr eingeben:" << endl;
 	cin >> jahr;
 
+return (tag + monat[monat-1] + monat[monat-2] + IstSchaltjahr
 	
 }
+
+//aufaddieren bis monat -1
+//Januar ist 0	
+
