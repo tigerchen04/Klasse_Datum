@@ -30,11 +30,11 @@ int TagzahlDesMonats[] = {1,32,60,91,121,152,182,213,244,274,305,335};
 	
 int Datum::IstSchaltjahr(int irgendeinJahr)
 {
-	if ((irgendeinJahr % 4 == 0) && (irgendeinJahr % 100 != 0))
+	if ((irgendeinJahr % 4 == 0) && (irgendeinJahr % 400 == 0))
 	{
 		return 1;
 	}
-	else if (irgendeinJahr % 400 == 0)
+	else if (irgendeinJahr % 100 == 0)
 	{
 		return 0;
 	}
