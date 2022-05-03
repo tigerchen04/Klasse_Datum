@@ -102,6 +102,8 @@ else if (monat == 12)
 else if (jahr == IstSchaltjahr)
 	++output;
 	
+cout << output << endl;
+	
 	
 	
 	
