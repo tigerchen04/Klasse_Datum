@@ -26,6 +26,23 @@ int november = 30;
 int dezember = 31;
 int monat[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
 
+//Tag des Jahres am Ersten des jeweiligen Monats (kein Schaltjahr):
+//TagDesJahres = TagzahlDesMonats + TagDesMonats -1
+/*January 	1	
+February 	32	
+March 		60	
+April 		91	
+May 		121	
+June 		152	
+July 		182	
+August 		213	
+September 	244	
+October 	274	
+November 	305	
+December 	335*/
+int TagzahlDesMonats[] = {1,32,60,91,121,152,182,213,244,274,305,335};
+
+	
 int Datum::IstSchaltjahr(int irgendeinJahr)
 {
 	if ((irgendeinJahr % 4 == 0) && (irgendeinJahr % 100 != 0))
