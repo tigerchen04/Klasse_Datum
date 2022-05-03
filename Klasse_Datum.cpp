@@ -11,21 +11,6 @@ Datum::Datum(int A, int B, int C)
 	
 }
 
-//Monate definieren:
-int januar = 31;
-int februar = 28; 
-int maerz = 31;
-int april = 30;
-int mai = 31;
-int juni = 30;
-int juli = 31;
-int august = 31;
-int september = 30;
-int oktober = 31;
-int november = 30;
-int dezember = 31;
-int monat[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
-
 //Tag des Jahres am Ersten des jeweiligen Monats (kein Schaltjahr):
 //TagDesJahres = TagzahlDesMonats + TagDesMonats -1
 /*January 	1	
@@ -65,10 +50,63 @@ int Datum::TagDesJahres(int tag, int monat, int jahr)
 	cout << "Jahr eingeben:" << endl;
 	cin >> jahr;
 
-return (tag + monat[monat-1] + monat[monat-2] + IstSchaltjahr
+int output; //output ist Tag des Jahres
+if (monat == 1) 
+{
+	output = tag;
+}
+else if (monat == 2)
+{
+	output = tag + TagzahlDesMonates[1] - 1
+}
+else if (monat == 3)
+{
+	output = tag + TagzahlDesMonates[2] - 1
+}
+else if (monat == 4)
+{
+	output = tag + TagzahlDesMonates[3] - 1
+}
+else if (monat == 5)
+{
+	output = tag + TagzahlDesMonates[4] - 1	
+}
+else if (monat == 6)
+{
+	output = tag + TagzahlDesMonates[5] - 1
+}
+else if (monat == 7)
+{
+	output = tag + TagzahlDesMonates[6] - 1
+}
+else if (monat == 8)
+{
+	output = tag + TagzahlDesMonates[7] - 1
+}
+else if (monat == 9)
+{
+	output = tag + TagzahlDesMonates[8] - 1
+}
+else if (monat == 10)
+{
+	output = tag + TagzahlDesMonates[9] - 1
+}
+else if (monat == 11)
+{
+	output = tag + TagzahlDesMonates[10] - 1
+}
+else if (monat == 12)
+{
+	output = tag + TagzahlDesMonates[11] - 1
+}
+else if (jahr == IstSchaltjahr)
+	++output;
+	
+	
+	
+	
+//return (tag + monat[monat-1] + monat[monat-2] + IstSchaltjahr
 	
 }
 
-//aufaddieren bis monat -1
-//Januar ist 0	
 
