@@ -5,9 +5,9 @@ using namespace std;
 //allgemeinen Konstruktor definieren: 
 Datum::Datum(int A, int B, int C)
 {
-	int tag = A;
-	int monat = B;
-	int jahr = C;
+	tag = A;
+	monat = B;
+	jahr = C;
 	
 }
 
