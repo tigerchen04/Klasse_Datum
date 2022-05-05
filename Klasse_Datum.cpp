@@ -57,47 +57,47 @@ if (monat == 1)
 }
 else if (monat == 2)
 {
-	output = tag + TagzahlDesMonates[1] - 1
+	output = tag + TagzahlDesMonats[1] - 1
 }
 else if (monat == 3)
 {
-	output = tag + TagzahlDesMonates[2] - 1
+	output = tag + TagzahlDesMonats[2] - 1
 }
 else if (monat == 4)
 {
-	output = tag + TagzahlDesMonates[3] - 1
+	output = tag + TagzahlDesMonats[3] - 1
 }
 else if (monat == 5)
 {
-	output = tag + TagzahlDesMonates[4] - 1	
+	output = tag + TagzahlDesMonats[4] - 1	
 }
 else if (monat == 6)
 {
-	output = tag + TagzahlDesMonates[5] - 1
+	output = tag + TagzahlDesMonats[5] - 1
 }
 else if (monat == 7)
 {
-	output = tag + TagzahlDesMonates[6] - 1
+	output = tag + TagzahlDesMonats[6] - 1
 }
 else if (monat == 8)
 {
-	output = tag + TagzahlDesMonates[7] - 1
+	output = tag + TagzahlDesMonats[7] - 1
 }
 else if (monat == 9)
 {
-	output = tag + TagzahlDesMonates[8] - 1
+	output = tag + TagzahlDesMonats[8] - 1
 }
 else if (monat == 10)
 {
-	output = tag + TagzahlDesMonates[9] - 1
+	output = tag + TagzahlDesMonats[9] - 1
 }
 else if (monat == 11)
 {
-	output = tag + TagzahlDesMonates[10] - 1
+	output = tag + TagzahlDesMonats[10] - 1
 }
 else if (monat == 12)
 {
-	output = tag + TagzahlDesMonates[11] - 1
+	output = tag + TagzahlDesMonats[11] - 1
 }
 else if (jahr == IstSchaltjahr)
 	++output;
@@ -109,6 +109,6 @@ cout << output << endl;
 	
 //return (tag + monat[monat-1] + monat[monat-2] + IstSchaltjahr
 	
-}
+};
 
 
