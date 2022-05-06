@@ -24,10 +24,9 @@ August 		213
 September 	244	
 October 	274	
 November 	305	
-December 	335*/
-int TagzahlDesMonats[] = {1,32,60,91,121,152,182,213,244,274,305,335};
+December 	335
+*/
 
-	
 int Datum::IstSchaltjahr(int irgendeinJahr)
 {
 	if ((irgendeinJahr % 4 == 0) && (irgendeinJahr % 400 == 0))
@@ -43,14 +42,9 @@ int Datum::IstSchaltjahr(int irgendeinJahr)
 
 int Datum::TagDesJahres(int tag, int monat, int jahr)
 {
-	cout << "Tag eingeben:" << endl;
-	cin >> tag;
-	cout << "Monat eingeben:" << endl;
-	cin >> monat;
-	cout << "Jahr eingeben:" << endl;
-	cin >> jahr;
 
-int output; //output ist Tag des Jahres
+int TagzahlDesMonats[12] = {1,32,60,91,121,152,182,213,244,274,305,335};
+int output = 0; //output ist Tag des Jahres
 if (monat == 1) 
 {
 	output = tag;
@@ -95,15 +89,10 @@ else if (monat == 11)
 {
 	output = tag + TagzahlDesMonats[10] - 1;
 }
-else if (jahr == IstSchaltjahr)
+else if (IstSchaltjahr(jahr)==1)
 	++output;
 	
-cout << output << endl;
-	
-	
-	
-	
-//return (tag + monat[monat-1] + monat[monat-2] + IstSchaltjahr
+return output;
 	
 };
 
