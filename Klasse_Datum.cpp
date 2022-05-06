@@ -57,47 +57,43 @@ if (monat == 1)
 }
 else if (monat == 2)
 {
-	output = tag + TagzahlDesMonats[1] - 1
+	output = tag + TagzahlDesMonats[1] - 1;
 }
 else if (monat == 3)
 {
-	output = tag + TagzahlDesMonats[2] - 1
+	output = tag + TagzahlDesMonats[2] - 1;
 }
 else if (monat == 4)
 {
-	output = tag + TagzahlDesMonats[3] - 1
+	output = tag + TagzahlDesMonats[3] - 1;
 }
 else if (monat == 5)
 {
-	output = tag + TagzahlDesMonats[4] - 1	
+	output = tag + TagzahlDesMonats[4] - 1;	
 }
 else if (monat == 6)
 {
-	output = tag + TagzahlDesMonats[5] - 1
+	output = tag + TagzahlDesMonats[5] - 1;
 }
 else if (monat == 7)
 {
-	output = tag + TagzahlDesMonats[6] - 1
+	output = tag + TagzahlDesMonats[6] - 1;
 }
 else if (monat == 8)
 {
-	output = tag + TagzahlDesMonats[7] - 1
+	output = tag + TagzahlDesMonats[7] - 1;
 }
 else if (monat == 9)
 {
-	output = tag + TagzahlDesMonats[8] - 1
+	output = tag + TagzahlDesMonats[8] - 1;
 }
 else if (monat == 10)
 {
-	output = tag + TagzahlDesMonats[9] - 1
+	output = tag + TagzahlDesMonats[9] - 1;
 }
 else if (monat == 11)
 {
-	output = tag + TagzahlDesMonats[10] - 1
-}
-else if (monat == 12)
-{
-	output = tag + TagzahlDesMonats[11] - 1
+	output = tag + TagzahlDesMonats[10] - 1;
 }
 else if (jahr == IstSchaltjahr)
 	++output;
