@@ -17,8 +17,5 @@ public:
 	//Methode instanziieren: 
 	static int IstSchaltjahr(int irgendeinJahr);
 	int TagDesJahres(int tag, int monat, int jahr);
-	
-	//Methode plappern:
-	
 
 };
