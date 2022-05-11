@@ -11,11 +11,10 @@ private:
 public:
 	//allgemeiner Konstruktor:
 	Datum(int Tag, int Monat, int Jahr);
-
 	
-	
-	//Methode instanziieren: 
-	static int IstSchaltjahr(int irgendeinJahr);
+	//Methoden instanziieren: 
+	int IstSchaltjahr(int irgendeinJahr);
 	int TagDesJahres(int tag, int monat, int jahr);
+	char Plappern(char flag);
 
 };
