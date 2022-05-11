@@ -47,4 +47,12 @@ int Datum::TagDesJahres(int tag, int monat, int jahr)
 		++output;
 	return output;
 
+}
+char Datum::Plappern(char flag)
+{
+	if (Plappern(flag) == true)
+	{
+
+	}
+
 };
